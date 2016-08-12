@@ -1,0 +1,62 @@
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse ul {
+  padding: 0;
+  list-style: none;
+	display: block;	
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 9999px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+	max-height: 9999px;
+	display: block;
+} 
+
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 2.5rem;
+  margin: 20px 0 0 0;
+  z-index: 50;
+	position: relative;
+padding: 0;
+display: inline-block;
+}
+
+@media screen and (min-width: 879px) {
+	
+	.nav-collapse ul .submenu {
+  padding: 0;
+  list-style: none;
+		display: none;
+}
+
+  .js .nav-collapse {
+}
+  .js .nav-collapse.closed {
+    max-height: none;
+}
+  .nav-toggle {
+    display: none;
+  }
+	
+}

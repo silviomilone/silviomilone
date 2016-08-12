@@ -1,0 +1,21 @@
+Title: Exposition
+
+----
+
+Year: 2013
+
+----
+
+Tags: city
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+
+----
+
+Link: https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=7ff7a5e980813cedb8ee459831c455bf&photoset_id=72157667803429064&user_id=143250961%40N04&extras=&format=json&nojsoncallback=1
+
+----
+
+Slider: 

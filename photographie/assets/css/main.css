@@ -1,0 +1,462 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+/* courier
+-------------------------------------------------- */
+@font-face {
+  font-family: 'courier';
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'courier';
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'courier';
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'courier';
+  font-style: italic;
+  font-weight: 400;
+  }
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: red;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+  height: 101%;
+  font-family: "courier", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0px auto;
+  font-size: 1rem;
+  line-height: 1.5em;
+  padding: 0.5em;
+  max-width: 100%;
+  background: #fff;
+  color: #222;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3.5em;
+    display: inline-block;
+            border-bottom: 2px solid black; 
+
+}
+.logo {
+	display: block;
+	font-size: 1rem;
+}
+.menu h2{
+	font-size: 1.5rem;
+	margin: 0;
+	line-height: 1.15rem;
+}
+
+/* Navigation
+-------------------------------------------------- */
+
+.menu a {
+  display: block;
+  color: #222;
+
+}
+.menu a:hover {
+ background-color:black;
+	color:#FFF;
+	opacity:1;
+}
+.menu .active {
+	background-color:black;
+	color:#FFF;
+	opacity:1;
+}
+
+.menu>li {
+	list-style: none;
+	width: 20%;
+	text-align: center;
+	min-width: 12rem;
+}
+
+
+.menu > li a {
+    display: block;
+    padding: 0px 0px;
+    text-decoration: none;  
+}
+.menu:not(:hover) a.active + .submenu{
+	display: block;
+}
+.menu:hover .active{
+	background: #ddd;
+	color: inherit;
+}
+.submenu {
+	color: #000;
+	display: none;
+	position: absolute; 
+	font-size: 0;
+	margin-top: 2px;
+}
+.submenu:before {
+	 color: #000;
+    display: none;
+    position: relative; 
+    width:850px;
+}
+.submenu li {
+	display: inline-block;
+	border-bottom: 2px solid black;
+	font-size: 1rem;
+}
+.submenu a {
+    background: #fff;
+    border: none;
+    line-height: 1.35rem;
+    margin: 0;
+    padding: 0px 20%;
+}
+.submenu a:hover {
+ background-color:black;
+    color:#FFF;
+    opacity:1;
+}
+@media screen and (min-width: 320px) {
+    body {
+    padding: 1em;
+  }
+  .logo {
+
+  }
+  .menu {
+      display: block;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu > li a {
+    padding: .35em 1em;
+  }
+  .menu > li:hover .submenu {
+    display: block;
+  }
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 1em;
+  line-height: 1.35em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 4em;
+  line-height: 1.35em;
+  font-weight: 300;
+  margin-bottom: .5em;
+		margin: 0 0;
+
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid red;
+	width: 60%;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.main hr {
+  margin: 3em 0;
+  height: 2px;
+  background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+}
+.meta li b {
+  font-weight: 400;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+
+@media screen and (min-width: 50em) {
+  .teaser li {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
+
+
+
+/* slider
+-------------------------------------------------- */
+
+.ratio-container{
+			width: 100%;
+			padding-top: 66.25%; /* ratio de 3/4 */
+			background: #transparent;
+			position: relative;
+		}
+		.swiper-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;		    
+			right: 0;
+		} 
+		.swiper-slide{
+			text-align: center;
+			white-space: nowrap;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.swiper-slide::before{
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}		
+		.swiper-slide img{
+			display: inline-block;
+			vertical-align: middle;
+			max-height: 100%;
+			max-width: 100%;
+		}
+		.pagination{
+			text-align: center;
+}
+		.thumb{
+			position: relative;
+			max-height: 10%;
+			max-width: 10%;
+			box-sizing: border-box;
+		    padding: 10px 0;
+		    display: inline-block;
+		    cursor: pointer;
+		    opacity: .75;
+		}
+		.thumb:hover{
+			opacity: .85;
+		}
+		.thumb.active{
+			opacity: 1;
+		}
+		.thumb:active{
+			opacity: .5;
+		}
+/*
+------------------------------------------------------- */
+
+$mosaic_col: 100 !default;
+$mosaic_row: 100 !default;
+$mosaic_gutter: 7 !default;
+
+$mosaic_nb_cols: 7 !default;
+$mosaic_nb_rows: 5 !default;
+
+@mixin tiles-sizes-positions-classes() {
+  @for $x from 0 to $mosaic_nb_cols {
+    @for $y from 0 to $mosaic_nb_rows {
+
+      // compute all sizes cases
+      $elm_width: ($mosaic_col * $x) + ($mosaic_gutter * ($x - 1));
+      $elm_height: ($mosaic_row * $y) + ($mosaic_gutter * ($y - 1));
+      
+      .tile-#{$x}-#{$y} {
+        width: $elm_width + px;
+        height: $elm_height + px;
+      }
+      
+      // compute all positions cases
+      $elm_x: ($mosaic_col * ($x)) + ($mosaic_gutter * ($x));
+      $elm_y: ($mosaic_row * ($y)) + ($mosaic_gutter * ($y));
+
+      .matx-#{$x}-#{$y} {
+        left: $elm_x + px;
+        top: $elm_y + px;
+      }
+    }
+  }
+}
+
+.mosaic-wrap {
+  @include tiles-sizes-positions-classes();
+  
+  position: relative;
+  margin: 0;
+  width: (($mosaic_nb_cols * $mosaic_col) + (($mosaic_nb_cols - 1) * $mosaic_gutter)) + px;
+  height: (($mosaic_nb_rows * $mosaic_row) + (($mosaic_nb_rows - 1) * $mosaic_gutter)) + px;
+
+  .tile {
+    position: absolute;
+  }
+}
+
+.blue { background: #2C82C9; }
+.red { background: #FC6042; }
+.green { background: #2CC990; }
+.yellow { background: #EEE657; }
+.orange { background: #FCB941; }
+.grey { background: #545454; }

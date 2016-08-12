@@ -1,0 +1,25 @@
+Title: Paysage
+
+----
+
+Year: 2013
+
+----
+
+Tags: city
+
+----
+
+Text: test
+
+----
+
+Link: https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=9b1f1882150ab3691ed154bca4f813b6&photoset_id=72157669477146966&user_id=143250961%40N04&extras=&format=json&nojsoncallback=1
+
+----
+
+Slider: 
+
+----
+
+Rawtext: 

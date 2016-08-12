@@ -1,0 +1,26 @@
+Title: Art
+
+----
+
+Text: Bonjour comment ca va
+
+----
+
+Year: 
+
+----
+
+Link: 72157669477146966
+
+----
+
+Tags: 
+
+----
+
+Slider: 
+
+- 
+  image: ""
+  title: test
+  date: ""

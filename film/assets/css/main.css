@@ -1,0 +1,448 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+/* courier
+-------------------------------------------------- */
+@font-face {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Courier;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Courier;
+  font-style: italic;
+  font-weight: 400;
+  }
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: red;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+  height: 101%;
+  font-family: "Courier", monospace;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0px;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding: 2rem 0rem 1rem 4rem;
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+  min-width: 320px;
+  width: 100%;
+	
+
+}
+.logo {
+	font-size: 1rem;
+	z-index: 10;
+	position: absolute;
+
+
+}
+.logo h1{
+	
+	width: 140px;
+
+}
+.logo h2{
+	font-size: 1.5rem;
+margin: -8px 0px 0px 110px;
+	line-height: 1.7rem;
+	text-decoration: none;
+
+}
+.tags h1{
+	font-size: 1.5rem;
+	margin: -1rem -1.5rem 1rem 0;
+	line-height: 1.7rem;
+	text-decoration: none;
+  text-align: right;
+
+}
+/* Navigation
+-------------------------------------------------- */
+.container { display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  flex: 0 1 auto;
+  align-self: auto; 
+}
+.row {
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.row2 {
+  flex: 0 1 auto;
+  align-self: auto;
+	background-color: red;
+	float right;
+}
+.menu {
+			position: relative;
+  font-size: 1rem;
+width: 15%;
+margin: 0px 0px 0px 0;
+}
+
+  
+
+.menu a {			  
+  text-decoration: underline;
+  color: #fff;
+	margin: auto;
+
+}
+.menu a:hover {
+  background-color:#fff;
+  color:#000;
+  opacity:1;
+}
+.menu .active {
+  background-color:#fff;
+  color:#000;
+  opacity:1;
+}
+
+.menu>li {
+  list-style: none;
+  min-width: 200px;
+	width: 100%;
+}
+
+
+.menu > li a {
+  display: block;
+}
+.menu:not(:hover) a.active + .submenu{
+  display: block;
+}
+.menu:hover a.active + .submenu{
+	display: block;
+
+}
+.menu:hover .active{
+  background: #ddd;
+  color: #000;
+}
+.submenu {
+  color: #000;
+  display: none;
+  position: relative; 
+  font-size: 14px;
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: auto;
+	
+}
+.submenu:before {
+
+	color: #fff;
+    display: none;
+    position: absolute; 
+	
+}
+.submenu li {
+
+	display: block;
+	border-bottom: 2px solid black;
+	font-size: 14px;
+	
+}
+.submenu a {
+  text-decoration: none;
+  background: #transparent;
+  color: #fff;
+  border: none;
+  line-height: 1rem;
+}
+.submenu a:hover {
+ background-color:#fff;
+    color:#000;
+    opacity:1;
+
+}
+.menu > li:hover .submenu {
+display: block;  }
+
+.menuicon { float: right;
+display: block;  }
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 0.8em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 100;	
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+
+  border-bottom: 2px solid red;
+	width: 50%;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.main hr {
+  margin: 1rem 0;
+  height: 2px;
+  background: #000;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1em;
+}
+.meta li {
+  list-style: none;
+  margin-right: 2em;
+}
+.meta li b {
+  font-weight: 200;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+
+@media screen and (min-width: 879px) {
+	
+  .teaser li {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
+
+
+
+/* Footer
+-------------------------------------------------- */
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-container .swiper-slide{
+	text-align:center;
+	margin-bottom: 0;
+}
+.swiper-container .swiper-slide img{
+	display: inline-block;
+	max-height: 100%;
+}
+
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 10%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 15%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+
+/*
+-----------------------------------*/
+
+@media screen and (min-width: 879px) 
+
+{
+		.main {margin: 35px auto}
+
+    body {
+  }
+  .logo {		position: fixed;
+		
+
+
+  }
+  .menu {margin: 50px 0px 0px 0; position: fixed;
+	
+
+
+  }
+  .menu > li {
+  }
+  .menu > li a {
+  }
+  .menu > li:hover .submenu {
+display: block;  }
+	.submenu {display: none;}
+}

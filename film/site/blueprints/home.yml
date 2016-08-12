@@ -1,0 +1,28 @@
+title: Home
+pages:
+  template: project
+files: false
+fields:
+  title:
+    label: Title
+    type: text
+  year:
+    label: Year
+    type: text
+  wtf:
+    label: Wtf
+    type: text
+  text:
+    label: Text
+    type: textarea
+  tags:
+    label: Tags
+    type: tags
+    separator: ' # '
+  featured:
+    label: Featured
+    type: oembed
+    preview: true
+    info: true
+    cheatsheet: true
+    height: 600px

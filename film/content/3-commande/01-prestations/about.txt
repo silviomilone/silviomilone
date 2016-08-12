@@ -1,0 +1,17 @@
+Title: Prestations
+
+----
+
+Year: 2013
+
+----
+
+Tags: city
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+
+----
+
+Link: https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0a29753e53430347250b225029f58cb6&photoset_id=72157669477146966&user_id=143250961%40N04&format=json&nojsoncallback=1&auth_token=72157670097451625-1b11171be8cfdbad&api_sig=311233bee3747f3f8e84d9dfd2cca2d7

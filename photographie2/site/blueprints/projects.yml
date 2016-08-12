@@ -1,0 +1,28 @@
+title: Projects
+pages:
+  template: projects
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  link:
+    label: Link
+    type:  text
+  slider:
+    label: Slider
+    type: structure
+    fields:
+      image:
+        label: Image
+        type: select
+        options: images
+      title:
+        label: Title
+        type: textarea
+      date:
+        label: Date
+        type: date

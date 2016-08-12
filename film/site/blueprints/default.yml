@@ -1,0 +1,20 @@
+title: Page
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  link:
+    label: Link
+    type:  text
+  featured:
+    label:      Featured
+    type:       oembed
+    preview:    false
+    info:       false
+    cheatsheet: false
+    height:     250px

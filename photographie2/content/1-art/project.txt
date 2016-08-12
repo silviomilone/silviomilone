@@ -1,0 +1,26 @@
+Title: Art
+
+----
+
+Text: test
+
+----
+
+Year: 
+
+----
+
+Link: https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=7ff7a5e980813cedb8ee459831c455bf&photoset_id=72157669477146966&user_id=143250961%40N04&format=json&nojsoncallback=1 
+
+----
+
+Tags: 
+
+----
+
+Slider: 
+
+- 
+  image: ""
+  title: test
+  date: ""

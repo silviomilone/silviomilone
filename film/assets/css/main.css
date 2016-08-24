@@ -114,14 +114,21 @@ body {
 }
 .logo h1{
 	
-	width: 140px;
+	width: 106px;
+	margin: 0;
+padding: 0;
+z-index: 100;
+	position: absolute;
+
 
 }
 .logo h2{
+	width: 63px;
 	font-size: 1.5rem;
 margin: -8px 0px 0px 110px;
 	line-height: 1.7rem;
 	text-decoration: none;
+	position: absolute;
 
 }
 .tags h1{
@@ -152,7 +159,7 @@ margin: -8px 0px 0px 110px;
   flex: 0 1 auto;
   align-self: auto;
 	background-color: red;
-	float right;
+	float: right;
 }
 .menu {
 			position: relative;
@@ -198,7 +205,7 @@ margin: 0px 0px 0px 0;
 
 }
 .menu:hover .active{
-  background: #ddd;
+  background: #fff;
   color: #000;
 }
 .submenu {
@@ -241,10 +248,91 @@ margin: 0px 0px 0px 0;
 .menu > li:hover .submenu {
 display: block;  }
 
+/* menuright
+-------------------------------------------------- */
 .menuicon { float: right;
+display: inline-flex;
+list-style: none;
+margin:-8px 0 0 75%;
+	width:auto;
+	min-width: 150px;
+}
+
+.menuicon a {			  
+  text-decoration: underline;
+  color: #CD000;
+	margin: auto;
+
+}
+.menuicon a:hover {
+	 background:red;}
+.menuicon .active {
+  background:#red;
+
+  opacity:1;
+}
+
+.menuicon>li {
+  list-style: none;
+ display: block;
+padding: 0 5px 5px 5px;
+}
+
+.menuicon .parent {margin: -5px 0px 0px;}
+
+.menuicon > li a {
+  display: block;
+}
+.menuicon:not(:hover) a.active + .submenuicon{
+  display: block;
+}
+.menuicon:hover a.active + .submenuicon{
+	display: block;
+
+}
+.menuicon:hover .active{
+  background: #ddd;
+  color: #000;
+}
+.submenuicon {
+  color: #000;
+  display: none;
+  position: absolute; 
+  font-size: 14px;
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: auto;
+	
+}
+.submenuicon:before {
+
+	color: #fff;
+    display: none;
+    position: absolute; 
+	
+}
+.submenuicon li {
+
+	display: block;
+	border-bottom: 2px solid black;
+	font-size: 14px;
+	
+}
+.submenuicon a {
+  text-decoration: none;
+  background: #transparent;
+  color: #fff;
+  border: none;
+  line-height: 1rem;
+}
+.submenuicon a:hover {
+ background:red;
+    color:#000;
+    opacity:1;
+
+}
+.menuicon > li:hover .submenuicon {
 display: block;  }
-
-
 /* Headings
 -------------------------------------------------- */
 h1 {
@@ -424,20 +512,20 @@ h1 a, h2 a, h3 a, h4 a {
 @media screen and (min-width: 879px) 
 
 {
-		.main {margin: 35px auto}
-
+		.main {margin: 35px auto;}
+.header {height: 0px;}
     body {
   }
-  .logo {		position: fixed;
-		
-
-
-  }
+  .logo h1{		position: fixed;
+		}
+	  .logo h2{		position: fixed;
+		}
   .menu {margin: 50px 0px 0px 0; position: fixed;
 	
-
-
-  }
+}
+	.menuicon { position: fixed; width:auto;
+	
+}
   .menu > li {
   }
   .menu > li a {
@@ -446,3 +534,6 @@ h1 a, h2 a, h3 a, h4 a {
 display: block;  }
 	.submenu {display: none;}
 }
+
+
+
